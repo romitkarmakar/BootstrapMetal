@@ -1,0 +1,88 @@
+// Responsive images (ensure images don't scale beyond their parents)
+//
+// This is purposefully opt-in via an explicit class rather than being the default for all `<img>`s.
+// We previously tried the "images are responsive by default" approach in Bootstrap v2,
+// and abandoned it in Bootstrap v3 because it breaks lots of third-party widgets (including Google Maps)
+// which weren't expecting the images within themselves to be involuntarily resized.
+// See also https://github.com/twbs/bootstrap/issues/18178
+.img-fluid {
+  @include img-fluid;
+}
+
+
+// Image thumbnails
+.img-thumbnail {
+  padding: $thumbnail-padding;
+  background-color: $thumbnail-bg;
+  border: $thumbnail-border-width solid $thumbnail-border-color;
+  @include border-radius($thumbnail-border-radius);
+  @include box-shadow($thumbnail-box-shadow);
+
+  // Keep them at most 100% wide
+  @include img-fluid;
+}
+
+.img-hover:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.img-flip:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.img-hover-shake:hover {
+  animation: shake 0.5s; 
+  animation-iteration-count: infinite; 
+}
+
+.img-shake {
+  animation: shake 0.5s; 
+  animation-iteration-count: infinite; 
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-opacity {
+  opacity: 0.60;
+}
+
+.img-greyscale {
+  filter: grayscale(75%)
+}
+
+//
+// Figures
+//
+
+.figure {
+  // Ensures the caption's text aligns with the image.
+  display: inline-block;
+}
+
+.figure-img {
+  margin-bottom: $spacer / 2;
+  line-height: 1;
+}
+
+.figure-caption {
+  @include font-size($figure-caption-font-size);
+  color: $figure-caption-color;
+}
+
+// Try to separate animation from the style scss file.
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

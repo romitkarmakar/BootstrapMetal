@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Add or remove shadows to elements with box-shadow utilities.">
+<meta name="author" content="Romit Karmakar, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.55.6">
+
+<meta name="docsearch:language" content="en">
+<meta name="docsearch:version" content="1.0">
+
+<title>Shadows · Bootstrap &#43; Metal</title>
+
+<link rel="canonical" href="https://trennds.bootstrap.com/docs/1.0/utilities/shadows/">
+
+
+
+<!-- Bootstrap core CSS -->
+<link href="/docs/1.0/dist/css/bootstrap.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+<link href="/docs/1.0/assets/css/docs.min.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/1.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/1.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/1.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/1.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/1.0/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/1.0/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/1.0/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="Shadows">
+<meta name="twitter:description" content="Add or remove shadows to elements with box-shadow utilities.">
+<meta name="twitter:image" content="https://trennds.bootstrap.com/docs/1.0/assets/brand/bootstrap-social.png">
+
+<!-- Facebook -->
+<meta property="og:url" content="https://trennds.bootstrap.com/docs/1.0/utilities/shadows/">
+<meta property="og:title" content="Shadows">
+<meta property="og:description" content="Add or remove shadows to elements with box-shadow utilities.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://trennds.bootstrap.com/docs/1.0/assets/brand/bootstrap-social.png">
+<meta property="og:image:secure_url" content="https://trennds.bootstrap.com/docs/1.0/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-146052-10', 'getbootstrap.com');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+</head>
+
+<body>
+  <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+  <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="176.90123649459775 257.0637094837935 266.50692677070816 163.46750300120055"  width="36"   height="36"   class="d-block" >
+    <defs>
+        <path d="M322.95 417.53L322.95 310.63L361.89 417.53L382.96 417.53L418.39 310.63L418.39 417.53L440.41 417.53L439.97 345.72L439.45 259.37L414.87 259.37L393.97 316.95L372.74 375.41L328.7 259.37L300.61 259.37L300.61 339.24L300.61 417.53L322.95 417.53Z" id="i5s7LSUN"></path>
+        <path d="M243.42 258.18L245.36 258.33L247.25 258.53L249.12 258.79L250.94 259.11L252.73 259.48L254.48 259.91L256.19 260.39L257.85 260.92L259.48 261.51L261.06 262.15L262.6 262.83L264.1 263.57L265.55 264.36L266.96 265.19L268.32 266.08L269.63 267.01L270.89 267.98L272.1 269L273.26 270.07L274.37 271.18L275.43 272.33L276.44 273.53L277.39 274.77L278.28 276.05L279.12 277.37L279.91 278.73L280.64 280.12L281.3 281.56L281.91 283.03L282.46 284.54L282.95 286.09L283.37 287.67L283.73 289.28L284.03 290.93L284.27 292.61L284.43 294.33L284.53 296.07L284.57 297.85L284.55 299.09L284.48 300.33L284.37 301.56L284.22 302.78L284.02 303.99L283.79 305.2L283.52 306.39L283.2 307.57L282.85 308.74L282.46 309.9L282.03 311.04L281.57 312.16L281.07 313.27L280.54 314.36L279.98 315.43L279.38 316.47L278.75 317.5L278.09 318.5L277.4 319.48L276.68 320.44L275.94 321.37L275.16 322.27L274.36 323.14L273.53 323.99L272.68 324.8L271.8 325.59L270.9 326.34L269.98 327.06L269.04 327.74L268.07 328.39L267.08 329L266.08 329.57L265.06 330.1L264.02 330.59L262.96 331.05L261.88 331.46L260.79 331.82L259.69 332.15L258.57 332.42L257.44 332.65L257.44 333.54L259.03 333.77L260.59 334.05L262.12 334.37L263.62 334.74L265.08 335.15L266.52 335.6L267.92 336.1L269.29 336.64L270.63 337.23L271.93 337.85L273.2 338.52L274.44 339.22L275.64 339.97L276.8 340.75L277.93 341.57L279.02 342.43L280.07 343.33L281.08 344.26L282.06 345.23L282.99 346.23L283.89 347.27L284.74 348.35L285.55 349.45L286.32 350.59L287.05 351.76L287.74 352.97L288.38 354.2L288.98 355.46L289.53 356.76L290.04 358.08L290.51 359.43L290.92 360.81L291.29 362.21L291.62 363.65L291.89 365.11L292.12 366.59L292.29 368.1L292.42 369.63L292.5 371.19L292.52 372.77L292.48 374.85L292.37 376.89L292.19 378.89L291.93 380.84L291.6 382.75L291.2 384.61L290.73 386.43L290.19 388.2L289.58 389.93L288.9 391.61L288.15 393.23L287.33 394.82L286.45 396.35L285.5 397.83L284.48 399.27L283.4 400.65L282.25 401.98L281.04 403.27L279.76 404.5L278.43 405.68L277.02 406.8L275.56 407.87L274.03 408.89L272.45 409.86L270.8 410.77L269.09 411.62L267.33 412.42L265.5 413.17L263.62 413.85L261.68 414.48L259.68 415.06L257.63 415.57L255.52 416.03L253.36 416.42L251.14 416.76L248.87 417.04L246.54 417.25L244.16 417.41L241.73 417.5L239.25 417.53L177.9 417.53L177.9 258.06L239.45 258.06L241.45 258.09L243.42 258.18ZM197.51 399.97L236.29 399.96L238.04 399.94L239.75 399.89L241.42 399.79L243.04 399.67L244.63 399.5L246.17 399.31L247.66 399.07L249.12 398.8L250.53 398.49L251.9 398.15L253.22 397.77L254.5 397.36L255.74 396.91L256.94 396.43L258.09 395.91L259.19 395.35L260.26 394.77L261.28 394.14L262.25 393.48L263.18 392.79L264.07 392.06L264.91 391.3L265.71 390.5L266.46 389.67L267.17 388.81L267.84 387.91L268.45 386.98L269.03 386.01L269.56 385.01L270.04 383.97L270.48 382.9L270.87 381.8L271.21 380.67L271.51 379.5L271.77 378.3L271.98 377.06L272.14 375.79L272.25 374.49L272.32 373.16L272.35 371.79L272.32 370.43L272.25 369.1L272.13 367.8L271.96 366.53L271.75 365.3L271.48 364.11L271.17 362.95L270.81 361.82L270.4 360.72L269.95 359.66L269.44 358.64L268.89 357.65L268.3 356.69L267.65 355.77L266.96 354.88L266.22 354.03L265.43 353.21L264.6 352.42L263.72 351.67L262.79 350.96L261.81 350.27L260.79 349.63L259.72 349.02L258.61 348.44L257.44 347.9L256.23 347.39L254.98 346.91L253.68 346.48L252.33 346.07L250.93 345.7L249.49 345.37L248 345.07L246.47 344.81L244.89 344.58L243.26 344.39L241.59 344.23L239.87 344.1L238.11 344.02L236.3 343.96L234.44 343.95L197.51 343.95L197.51 399.97ZM197.51 326.8L228.88 326.8L230.6 326.78L232.28 326.73L233.92 326.64L235.52 326.52L237.08 326.36L238.6 326.17L240.08 325.95L241.52 325.69L242.92 325.39L244.27 325.06L245.58 324.7L246.86 324.31L248.09 323.88L249.27 323.41L250.42 322.92L251.52 322.39L252.58 321.83L253.6 321.23L254.57 320.61L255.5 319.95L256.39 319.25L257.23 318.53L258.03 317.77L258.79 316.98L259.5 316.16L260.17 315.31L260.79 314.43L261.37 313.51L261.9 312.57L262.39 311.59L262.83 310.58L263.22 309.55L263.57 308.48L263.88 307.38L264.13 306.25L264.35 305.09L264.51 303.9L264.63 302.67L264.7 301.42L264.72 300.14L264.7 298.97L264.64 297.83L264.54 296.71L264.4 295.62L264.23 294.55L264.01 293.52L263.75 292.51L263.46 291.53L263.13 290.57L262.76 289.64L262.35 288.75L261.9 287.88L261.42 287.04L260.9 286.22L260.34 285.44L259.74 284.68L259.11 283.96L258.45 283.26L257.74 282.59L257 281.95L256.23 281.34L255.41 280.76L254.57 280.22L253.69 279.7L252.77 279.21L251.82 278.75L250.83 278.32L249.81 277.92L248.76 277.56L247.67 277.22L246.55 276.92L245.39 276.65L244.21 276.4L242.98 276.2L241.73 276.02L240.44 275.87L239.12 275.76L237.77 275.68L236.39 275.63L234.98 275.61L197.51 275.61L197.51 326.8Z" id="h1HaOhEhRw"></path>
+    </defs>
+    <g>
+        <g>
+            <use xlink:href="#i5s7LSUN" opacity="1" fill="#ffffff" fill-opacity="1"></use>
+            <g>
+                <use xlink:href="#i5s7LSUN" opacity="1" fill-opacity="0" stroke="#ffffff" stroke-width="1" stroke-opacity="1"></use>
+            </g>
+        </g>
+        <g>
+            <use xlink:href="#h1HaOhEhRw" opacity="1" fill="#ffffff" fill-opacity="1"></use>
+            <g>
+                <use xlink:href="#h1HaOhEhRw" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="0"></use>
+            </g>
+        </g>
+    </g>
+</svg>
+  </a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/docs/1.0/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/docs/1.0/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+      </li>
+      
+      
+      <li class="nav-item">
+        <a class="nav-link" href="https://blog.trennds.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="navbar-nav ml-md-auto">
+    <li class="nav-item dropdown">
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-expanded="false">
+        v1.0
+      </a>
+      <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
+        <a class="dropdown-item active" href="/docs/1.0/">Latest (1.0.x)</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.2/">v4.2.1</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/">v4.0.0</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/docs/3.3/">v3.3.7</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="/docs/versions/">All versions</a>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://github.com/romitkarmakar/BootstrapMetal" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 499.36" role="img"><title>GitHub</title><path fill="currentColor" fill-rule="evenodd" d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z"/></svg>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 416.32" role="img"><title>Twitter</title><path fill="currentColor" d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92"/></svg>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com/" target="_blank" rel="noopener" aria-label="Slack">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class="navbar-nav-svg" viewBox="0 0 512 512" role="img"><title>Slack</title><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"/><path fill="currentColor" d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z"/></svg>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="/" target="_blank" rel="noopener" aria-label="Open Collective">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" fill-rule="evenodd" class="navbar-nav-svg" viewBox="0 0 40 41" role="img"><title>Open Collective</title><path fill-opacity=".4" d="M32.8 21c0 2.4-.8 4.9-2 6.9l5.1 5.1c2.5-3.4 4.1-7.6 4.1-12 0-4.6-1.6-8.8-4-12.2L30.7 14c1.2 2 2 4.3 2 7z"/><path d="M20 33.7a12.8 12.8 0 0 1 0-25.6c2.6 0 5 .7 7 2.1L32 5a20 20 0 1 0 .1 31.9l-5-5.2a13 13 0 0 1-7 2z"/></svg>
+      </a>
+    </li>
+  </ul>
+
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/docs/1.0/getting-started/download/">Download</a>
+</header>
+
+
+  <div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+      <div class="col-md-3 col-xl-2 bd-sidebar">
+        <form class="bd-search d-flex align-items-center">
+  <input type="search" class="form-control" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" data-docs-version="1.0">
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>
+  </button>
+</form>
+
+<nav class="collapse bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/1.0/getting-started/introduction/">Getting started</a>
+      </div>
+
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/1.0/layout/overview/">Layout</a>
+      </div>
+
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/1.0/content/reboot/">Content</a>
+      </div>
+
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/1.0/components/alerts/">Components</a>
+      </div>
+
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/1.0/helpers/clearfix/">Helpers</a>
+      </div>
+
+    <div class="bd-toc-item active">
+        <a class="bd-toc-link" href="/docs/1.0/utilities/api/">Utilities</a>
+        <ul class="nav bd-sidenav">
+            <li>
+              <a href="/docs/1.0/utilities/api/">API</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/borders/">Borders</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/colors/">Colors</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/display/">Display</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/flex/">Flex</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/float/">Float</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/overflow/">Overflow</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/position/">Position</a>
+            </li>
+            <li class="active bd-sidenav-active">
+              <a href="/docs/1.0/utilities/shadows/">Shadows</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/sizing/">Sizing</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/spacing/">Spacing</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/text/">Text</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/vertical-align/">Vertical align</a>
+            </li>
+            <li>
+              <a href="/docs/1.0/utilities/visibility/">Visibility</a>
+            </li>
+        </ul>
+      </div>
+
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/1.0/extend/approach/">Extend</a>
+      </div>
+
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/1.0/migration/">Migration</a>
+      </div>
+
+    <div class="bd-toc-item">
+        <a class="bd-toc-link" href="/docs/1.0/about/overview/">About</a>
+      </div>
+</nav>
+
+      </div>
+
+      
+
+      <main class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+        <h1 class="bd-title" id="content">Shadows</h1>
+        <p class="bd-lead">Add or remove shadows to elements with box-shadow utilities.</p>
+        <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
+
+        
+
+<h2 id="examples">Examples</h2>
+
+<p>While shadows on components are disabled by default in Bootstrap and can be enabled via <code>$enable-shadows</code>, you can also quickly add or remove a shadow with our <code>box-shadow</code> utility classes. Includes support for <code>.shadow-none</code> and three default sizes (which have associated variables to match).</p>
+
+<div class="bd-example">
+<div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+<div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+<div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+<div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+</div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;shadow-none p-3 mb-5 bg-light rounded&#34;</span><span class="p">&gt;</span>No shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;shadow-sm p-3 mb-5 bg-white rounded&#34;</span><span class="p">&gt;</span>Small shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;shadow p-3 mb-5 bg-white rounded&#34;</span><span class="p">&gt;</span>Regular shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;shadow-lg p-3 mb-5 bg-white rounded&#34;</span><span class="p">&gt;</span>Larger shadow<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="/docs/1.0/dist/js/bootstrap.bundle.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="/docs/1.0/assets/js/vendor/anchor.min.js"></script>
+  <script src="/docs/1.0/assets/js/vendor/clipboard.min.js"></script>
+  <script src="/docs/1.0/assets/js/vendor/bs-custom-file-input.min.js"></script>
+  <script src="/docs/1.0/assets/js/src/application.js"></script>
+  <script src="/docs/1.0/assets/js/src/search.js"></script>
+</body>
+
+</html>
